@@ -14,11 +14,11 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Info Table</h4>
+                                <h4 class="card-title">Shipment Table</h4>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <button type="submit" class="btn btn-primary"><a href="{{ route('shipments.create') }}">{{__('Create Shpment')}}</a></button>
+                                    <button type="submit" class="btn btn-warning"><a href="{{ route('shipments.create') }}">{{__('Create Shpment')}}</a></button> <br> <br> <br>
                                     <table id="example2" class="display" style="width:100%">
                                         <thead>
                                         <tr>
