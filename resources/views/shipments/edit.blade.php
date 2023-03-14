@@ -123,9 +123,9 @@
 
                                             <div class="mb-3 col-md-4">
                                                 <label class="form-label">Shipping Weight</label>
-                                                <input id="shipping_weight" type="text" class="form-control @error('shipping_weight') is-invalid @enderror" name="shipping_weight" value="{{ old('shipping_weight', $shipment->shipping_weight) }}"  autocomplete="shipping_weight" >
+                                                <input id="shipment_weight" type="text" class="form-control @error('shipment_weight') is-invalid @enderror" name="shipment_weight" value="{{ old('shipment_weight', $shipment->shipment_weight) }}"  autocomplete="shipment_weight" >
 
-@error('shipping_weight')
+@error('shipment_weight')
     <span class="invalid-feedback" role="alert">
         <strong>{{ $message }}</strong>
     </span>

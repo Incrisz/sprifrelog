@@ -200,7 +200,7 @@
         
         <tr>
         <td>Weight:</td>
-        <td>{{$tracks->shipping_weight}}</td>
+        <td>{{$tracks->shipment_weight}}</td>
         </tr>
         
         <tr>
