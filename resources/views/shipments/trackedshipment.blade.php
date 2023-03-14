@@ -116,6 +116,20 @@
         <th>Phone:</th>
         <td>{{$tracks->sender_phone}}</td>
         </tr>
+
+        <tr>
+        <th>City:</th>
+        <td>{{$tracks->sender_city}}</td>
+      </tr>
+
+      <tr>
+        <th>State</th>
+        <td>{{$tracks->sender_state}}</td>
+      </tr>
+      <tr>
+        <th>Country</th>
+        <td>{{$tracks->sender_country}}</td>
+        </tr>
      
     </tbody>
 </table>
@@ -145,6 +159,19 @@
       <tr>
         <th>Phone:</th>
         <td>{{$tracks->receiver_phone}}</td>
+      </tr>
+
+      <tr>
+        <th>City:</th>
+        <td>{{$tracks->receiver_city}}</td>
+      </tr>
+      <tr>
+        <th>State:</th>
+        <td>{{$tracks->receiver_state}}</td>
+      </tr>
+      <tr>
+        <th>Country:</th>
+        <td>{{$tracks->receiver_country}}</td>
       </tr>
     </tbody>
 </table>
