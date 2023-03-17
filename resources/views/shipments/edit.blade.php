@@ -677,8 +677,87 @@
 @enderror
                                             </div>
 
+                                            <div class="mb-3 col-md-4">
+                                                <label class="form-label">9th Product Comment Date</label>
+                                                <input id="date9" type="text" class="form-control @error('date9') is-invalid @enderror" name="date9" value="{{ old('date9', $shipment->date9) }}"  autocomplete="date9" >
+
+@error('date9')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
+                                            </div>
 
 
+                                            <div class="mb-3 col-md-4">
+                                                <label class="form-label">10th Product Comment Date</label>
+                                                <input id="date10" type="text" class="form-control @error('date10') is-invalid @enderror" name="date10" value="{{ old('date10', $shipment->date10) }}"  autocomplete="date10" >
+
+@error('date10')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
+                                            </div>
+
+
+                                            <div class="mb-3 col-md-4">
+                                                <label class="form-label">11th Product Comment Date</label>
+                                                <input id="date11" type="text" class="form-control @error('date11') is-invalid @enderror" name="date11" value="{{ old('date11', $shipment->date11) }}"  autocomplete="date11" >
+
+@error('date11')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
+                                            </div>
+
+
+                                            <div class="mb-3 col-md-4">
+                                                <label class="form-label">12th Product Comment Date</label>
+                                                <input id="date12" type="text" class="form-control @error('date12') is-invalid @enderror" name="date12" value="{{ old('date12', $shipment->date12) }}"  autocomplete="date12" >
+
+@error('date12')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
+                                            </div>
+
+                                            <div class="mb-3 col-md-4">
+                                                <label class="form-label">13th Product Comment Date</label>
+                                                <input id="date13" type="text" class="form-control @error('date13') is-invalid @enderror" name="date13" value="{{ old('date13', $shipment->date13) }}"  autocomplete="date13" >
+
+@error('date13')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
+                                            </div>
+
+                                            <div class="mb-3 col-md-4">
+                                                <label class="form-label">14th Product Comment Date</label>
+                                                <input id="date14" type="text" class="form-control @error('date14') is-invalid @enderror" name="date14" value="{{ old('date14', $shipment->date14) }}"  autocomplete="date14" >
+
+@error('date14')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
+                                            </div>
+
+
+
+                                            <div class="mb-3 col-md-4">
+                                                <label class="form-label">15th Product Comment Date</label>
+                                                <input id="date15" type="text" class="form-control @error('date15') is-invalid @enderror" name="date15" value="{{ old('date15', $shipment->date15) }}"  autocomplete="date15" >
+
+@error('date15')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
+                                            </div>
 
 
 

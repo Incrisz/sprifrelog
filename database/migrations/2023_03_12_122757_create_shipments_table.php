@@ -79,6 +79,34 @@ return new class extends Migration
             $table->string('package_detail8')->nullable()->default("");
             $table->text('date8')->nullable();
 
+            $table->string('comment9')->nullable()->default("");
+            $table->string('package_detail9')->nullable()->default("");
+            $table->text('date9')->nullable();
+
+            $table->string('comment10')->nullable()->default("");
+            $table->string('package_detail10')->nullable()->default("");
+            $table->text('date10')->nullable();
+
+            $table->string('comment11')->nullable()->default("");
+            $table->string('package_detail11')->nullable()->default("");
+            $table->text('date11')->nullable();
+
+            $table->string('comment12')->nullable()->default("");
+            $table->string('package_detail12')->nullable()->default("");
+            $table->text('date12')->nullable();
+
+
+            $table->string('comment13')->nullable()->default("");
+            $table->string('package_detail13')->nullable()->default("");
+            $table->text('date13')->nullable();
+
+            $table->string('comment14')->nullable()->default("");
+            $table->string('package_detail14')->nullable()->default("");
+            $table->text('date14')->nullable();
+
+            $table->string('comment15')->nullable()->default("");
+            $table->string('package_detail15')->nullable()->default("");
+            $table->text('date15')->nullable();
             
     
             $table->timestamps();

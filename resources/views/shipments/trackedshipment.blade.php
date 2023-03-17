@@ -85,11 +85,11 @@
     
      <p align="center" style="color:red">
          <img src="{{ URL::asset('public/track/img/sm.png')}}"><br>
-         Your parcel is safe.</p>
+         </p>
     <h3 align="center"><strong>TRACKING DETAILS</strong></h3><hr><br>
     <div class="row">
         <div class="col-lg-4" align="center">
-    <img src="{{ URL::asset('public/track/img/0F02B20F-D516-4A3D-8072-CBDC84008FEB.jpg')}}" class="img-responsive" style="border-radius:5px" width="200px" height="200px">
+    <!-- <img src="{{ URL::asset('public/track/img/0F02B20F-D516-4A3D-8072-CBDC84008FEB.jpg')}}" class="img-responsive" style="border-radius:5px" width="200px" height="200px"> -->
 </div>
 <div class="col-lg-4">
     <div style="background-color:#0099FF; padding-top:5px; padding-bottom:2px; padding-left:2px; color:white">
@@ -266,6 +266,31 @@
 
     <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
     <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment8}}<br><strong>{{$tracks->package_detail8}} </strong><br>{{$tracks->date8}}  <br>
+       
+    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
+    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment9}}<br><strong>{{$tracks->package_detail9}} </strong><br>{{$tracks->date9}}  <br>
+       
+
+    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
+    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment10}}<br><strong>{{$tracks->package_detail10}} </strong><br>{{$tracks->date10}}  <br>
+       
+    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
+    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment11}}<br><strong>{{$tracks->package_detail11}} </strong><br>{{$tracks->date11}}  <br>
+
+    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
+    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment12}}<br><strong>{{$tracks->package_detail12}} </strong><br>{{$tracks->date12}}  <br>
+
+    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
+    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment13}}<br><strong>{{$tracks->package_detail13}} </strong><br>{{$tracks->date13}}  <br>
+
+    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
+    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment14}}<br><strong>{{$tracks->package_detail14}} </strong><br>{{$tracks->date14}}  <br>
+
+    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
+    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment15}}<br><strong>{{$tracks->package_detail15}} </strong><br>{{$tracks->date15}}  <br>
+       
+       
+       
        
     </p>
     </div>

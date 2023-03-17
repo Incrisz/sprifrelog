@@ -80,5 +80,33 @@ class Shipment extends Model
         'comment8',
         'package_detail8',
         'date8',
+
+        'comment9',
+        'package_detail9',
+        'date9',
+
+        'comment10',
+        'package_detail10',
+        'date10',
+
+        'comment11',
+        'package_detail11',
+        'date11',
+
+        'comment12',
+        'package_detail12',
+        'date12',
+
+        'comment13',
+        'package_detail13',
+        'date13',
+
+        'comment14',
+        'package_detail14',
+        'date14',
+
+        'comment15',
+        'package_detail15',
+        'date15',
     ];
 }

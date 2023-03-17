@@ -88,6 +88,34 @@ class ShipmentController extends Controller
            'comment8' => 'nullable',
            'package_detail8'  => 'nullable',
            'date8'  => 'nullable',
+
+           'comment9' => 'nullable',
+           'package_detail9'  => 'nullable',
+           'date9'  => 'nullable',
+
+           'comment10' => 'nullable',
+           'package_detail10'  => 'nullable',
+           'date10'  => 'nullable',
+
+           'comment11' => 'nullable',
+           'package_detail11'  => 'nullable',
+           'date11'  => 'nullable',
+
+           'comment12' => 'nullable',
+           'package_detail12'  => 'nullable',
+           'date12'  => 'nullable',
+
+           'comment13' => 'nullable',
+           'package_detail13'  => 'nullable',
+           'date13'  => 'nullable',
+
+           'comment14' => 'nullable',
+           'package_detail14'  => 'nullable',
+           'date14'  => 'nullable',
+
+           'comment15' => 'nullable',
+           'package_detail15'  => 'nullable',
+           'date15'  => 'nullable',
        ]);
 
        Shipment::create($validatedData);
@@ -175,6 +203,34 @@ class ShipmentController extends Controller
            'comment8' => 'nullable',
            'package_detail8'  => 'nullable',
            'date8'  => 'nullable',
+
+           'comment9' => 'nullable',
+           'package_detail9'  => 'nullable',
+           'date9'  => 'nullable',
+
+           'comment10' => 'nullable',
+           'package_detail10'  => 'nullable',
+           'date10'  => 'nullable',
+
+           'comment11' => 'nullable',
+           'package_detail11'  => 'nullable',
+           'date11'  => 'nullable',
+
+           'comment12' => 'nullable',
+           'package_detail12'  => 'nullable',
+           'date12'  => 'nullable',
+
+           'comment13' => 'nullable',
+           'package_detail13'  => 'nullable',
+           'date13'  => 'nullable',
+
+           'comment14' => 'nullable',
+           'package_detail14'  => 'nullable',
+           'date14'  => 'nullable',
+
+           'comment15' => 'nullable',
+           'package_detail15'  => 'nullable',
+           'date15'  => 'nullable',
          
 
     
