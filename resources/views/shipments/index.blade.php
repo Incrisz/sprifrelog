@@ -36,7 +36,7 @@
 
                                         @foreach($shipments as $shipment)
 
-                                        @if(Auth::user()->id == $shipment->user_id )
+                                        @if(Auth::user()->id == $shipment->user_id || Auth::user()->user_type == "Admin")
                                 <tr>
                                     <th scope="row">{{ $loop->iteration }}</th>
                                     <td>{{ $shipment->tracking_id }}</td>
