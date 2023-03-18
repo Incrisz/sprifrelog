@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Shipment;
+use App\Models\Comment;
 use Illuminate\Http\Request;
 
 class ShipmentController extends Controller
@@ -56,66 +57,6 @@ class ShipmentController extends Controller
         
            'shipment_weight' => 'nullable',
        
-           'comment1' => 'nullable',
-           'package_detail1'  => 'nullable',
-           'date1'  => 'nullable',
-
-
-           'comment2' => 'nullable',
-           'package_detail2'  => 'nullable',
-           'date2'  => 'nullable',
-
-           'comment3' => 'nullable',
-           'package_detail3'  => 'nullable',
-           'date3'  => 'nullable',
-
-           'comment4' => 'nullable',
-           'package_detail4'  => 'nullable',
-           'date4'  => 'nullable',
-
-           'comment5' => 'nullable',
-           'package_detail5'  => 'nullable',
-           'date5'  => 'nullable',
-
-           'comment6' => 'nullable',
-           'package_detail6'  => 'nullable',
-           'date6'  => 'nullable',
-
-           'comment7' => 'nullable',
-           'package_detail7'  => 'nullable',
-           'date7'  => 'nullable',
-
-           'comment8' => 'nullable',
-           'package_detail8'  => 'nullable',
-           'date8'  => 'nullable',
-
-           'comment9' => 'nullable',
-           'package_detail9'  => 'nullable',
-           'date9'  => 'nullable',
-
-           'comment10' => 'nullable',
-           'package_detail10'  => 'nullable',
-           'date10'  => 'nullable',
-
-           'comment11' => 'nullable',
-           'package_detail11'  => 'nullable',
-           'date11'  => 'nullable',
-
-           'comment12' => 'nullable',
-           'package_detail12'  => 'nullable',
-           'date12'  => 'nullable',
-
-           'comment13' => 'nullable',
-           'package_detail13'  => 'nullable',
-           'date13'  => 'nullable',
-
-           'comment14' => 'nullable',
-           'package_detail14'  => 'nullable',
-           'date14'  => 'nullable',
-
-           'comment15' => 'nullable',
-           'package_detail15'  => 'nullable',
-           'date15'  => 'nullable',
        ]);
 
        Shipment::create($validatedData);
@@ -171,66 +112,6 @@ class ShipmentController extends Controller
            'shipment_weight' => 'nullable',
 
 
-           'comment1' => 'nullable',
-           'package_detail1'  => 'nullable',
-           'date1'  => 'nullable',
-
-
-           'comment2' => 'nullable',
-           'package_detail2'  => 'nullable',
-           'date2'  => 'nullable',
-
-           'comment3' => 'nullable',
-           'package_detail3'  => 'nullable',
-           'date3'  => 'nullable',
-
-           'comment4' => 'nullable',
-           'package_detail4'  => 'nullable',
-           'date4'  => 'nullable',
-
-           'comment5' => 'nullable',
-           'package_detail5'  => 'nullable',
-           'date5'  => 'nullable',
-
-           'comment6' => 'nullable',
-           'package_detail6'  => 'nullable',
-           'date6'  => 'nullable',
-
-           'comment7' => 'nullable',
-           'package_detail7'  => 'nullable',
-           'date7'  => 'nullable',
-
-           'comment8' => 'nullable',
-           'package_detail8'  => 'nullable',
-           'date8'  => 'nullable',
-
-           'comment9' => 'nullable',
-           'package_detail9'  => 'nullable',
-           'date9'  => 'nullable',
-
-           'comment10' => 'nullable',
-           'package_detail10'  => 'nullable',
-           'date10'  => 'nullable',
-
-           'comment11' => 'nullable',
-           'package_detail11'  => 'nullable',
-           'date11'  => 'nullable',
-
-           'comment12' => 'nullable',
-           'package_detail12'  => 'nullable',
-           'date12'  => 'nullable',
-
-           'comment13' => 'nullable',
-           'package_detail13'  => 'nullable',
-           'date13'  => 'nullable',
-
-           'comment14' => 'nullable',
-           'package_detail14'  => 'nullable',
-           'date14'  => 'nullable',
-
-           'comment15' => 'nullable',
-           'package_detail15'  => 'nullable',
-           'date15'  => 'nullable',
          
 
     
@@ -300,8 +181,11 @@ public function trackedShipmentPage(Request $request)
     // Your logic to get the shipment status based on the current location and other factors
     $shipment_status = 'In transit';
     $tracks = Shipment::where('tracking_id', $tracking_id)->first();
-    // dd("working");
-    return view('shipments.trackedshipment', compact('tracks'));
+
+    $shipments = Shipment::findOrFail($tracks->id);
+    $comments = $shipments->comments()->orderBy('created_at')->paginate(100);
+    // dd($comments);
+    return view('shipments.trackedshipment', compact('tracks', 'comments'));
 }
 
     

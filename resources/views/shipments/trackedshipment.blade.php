@@ -242,54 +242,11 @@
         </p>
         
         <p>
+        @foreach ($comments as $comment)
                 <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment1}}<br><strong>{{$tracks->package_detail1}} </strong><br>{{$tracks->date1}}  <br>
+    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$comment->comment}}<br><strong>{{$comment->package_detail}} </strong><br>{{$comment->date}}  <br>
 
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment2}}<br><strong>{{$tracks->package_detail2}} </strong><br>{{$tracks->date2}}  <br>
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment3}}<br><strong>{{$tracks->package_detail3}} </strong><br>{{$tracks->date3}}  <br>
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment4}}<br><strong>{{$tracks->package_detail4}} </strong><br>{{$tracks->date4}}  <br>
-      
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment5}}<br><strong>{{$tracks->package_detail5}} </strong><br>{{$tracks->date5}}  <br>
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment6}}<br><strong>{{$tracks->package_detail6}} </strong><br>{{$tracks->date6}}  <br>
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment7}}<br><strong>{{$tracks->package_detail7}} </strong><br>{{$tracks->date7}}  <br>
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment8}}<br><strong>{{$tracks->package_detail8}} </strong><br>{{$tracks->date8}}  <br>
-       
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment9}}<br><strong>{{$tracks->package_detail9}} </strong><br>{{$tracks->date9}}  <br>
-       
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment10}}<br><strong>{{$tracks->package_detail10}} </strong><br>{{$tracks->date10}}  <br>
-       
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment11}}<br><strong>{{$tracks->package_detail11}} </strong><br>{{$tracks->date11}}  <br>
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment12}}<br><strong>{{$tracks->package_detail12}} </strong><br>{{$tracks->date12}}  <br>
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment13}}<br><strong>{{$tracks->package_detail13}} </strong><br>{{$tracks->date13}}  <br>
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment14}}<br><strong>{{$tracks->package_detail14}} </strong><br>{{$tracks->date14}}  <br>
-
-    <img src="{{ URL::asset('public/track/img/dash2.png')}}" width="5px"><br>
-    <img src="{{ URL::asset('public/track/img/dot.png')}}" class="blink-image" width="10px"> {{$tracks->comment15}}<br><strong>{{$tracks->package_detail15}} </strong><br>{{$tracks->date15}}  <br>
-       
-       
+@endforeach
        
        
     </p>

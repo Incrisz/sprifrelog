@@ -42,71 +42,13 @@ class Shipment extends Model
         'shipment_weight', 
 
 
-        'comment1',
-        'package_detail1',
-        'date1',
-
-
-        'comment2',
-        'package_detail2',
-        'date2',
-
-
-        'comment3',
-        'package_detail3',
-        'date3',
-
-
-        'comment4',
-        'package_detail4',
-        'date4',
-
-
-        'comment5',
-        'package_detail5',
-        'date5',
-
-
-        'comment6',
-        'package_detail6',
-        'date6',
-
-
-        'comment7',
-        'package_detail7',
-        'date7',
-
-
-        'comment8',
-        'package_detail8',
-        'date8',
-
-        'comment9',
-        'package_detail9',
-        'date9',
-
-        'comment10',
-        'package_detail10',
-        'date10',
-
-        'comment11',
-        'package_detail11',
-        'date11',
-
-        'comment12',
-        'package_detail12',
-        'date12',
-
-        'comment13',
-        'package_detail13',
-        'date13',
-
-        'comment14',
-        'package_detail14',
-        'date14',
-
-        'comment15',
-        'package_detail15',
-        'date15',
+       
     ];
+
+
+    public function comments()
+{
+    return $this->hasMany(Comment::class);
+}
+
 }
