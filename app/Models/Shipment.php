@@ -39,7 +39,8 @@ class Shipment extends Model
         'receiver_email',
 
 
-        'shipment_weight', 
+        'shipment_weight',
+        'user_id', 
 
 
        

@@ -35,6 +35,8 @@
                                         <tbody>
 
                                         @foreach($shipments as $shipment)
+
+                                        @if(Auth::user()->id == $shipment->user_id )
                                 <tr>
                                     <th scope="row">{{ $loop->iteration }}</th>
                                     <td>{{ $shipment->tracking_id }}</td>
@@ -55,6 +57,7 @@
                                         </form>
                                     </td>
                                 </tr>
+                                @endif
                                 @endforeach
                                             
                                         </tbody>

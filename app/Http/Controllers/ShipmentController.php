@@ -36,6 +36,9 @@ class ShipmentController extends Controller
            'delivery_percentage' => 'required',
            'shipping_from' => 'required',
            'shipping_to' => 'required',
+           
+           'user_id' => 'required',
+
 
 
            'sender_name' => 'required',
@@ -99,7 +102,9 @@ class ShipmentController extends Controller
            'sender_country' => 'nullable',
            'sender_phone' => 'nullable',
            'sender_email' => 'nullable',
-
+           
+           'user_id' => 'required',
+           
            'receiver_name' => 'required',
            'receiver_address' => 'required',
            'receiver_city' => 'nullable',

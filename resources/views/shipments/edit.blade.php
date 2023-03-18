@@ -285,7 +285,10 @@
                                             </div>
 
 
-
+                                            <div class="mb-3 col-md-4">
+                                                <!-- <label class="form-label">Receiver Eamil</label> -->
+                                                <input id="user_id" type="hidden" class="form-control" name="user_id" value="{{ old('user_id', $shipment->user_id) }}"  autocomplete="receiver_email"  >
+                              </div>
 
 
 
